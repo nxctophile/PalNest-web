@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  height: 100%;
+}
+
+.heroContainer {
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.heroText > div {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.heroContainer > span {
+  font-size: 1.2rem;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+}
+
+.buttonContainer > button {
+  padding: 1em 2em;
+  margin-right: 1rem;
+  font-size: 1rem;
+  border-radius: 20rem;
+  transition: .2s;
+}
+
+.signupButton {
+  border: 1px solid;
+  color: #fff;
+  background: #6750A4;
+}
+
+.loginButton {
+  background: transparent;
+  border: 1px solid #222;
+  color: #6750A4;
+}
+
+@media(hover:hover) {
+  .buttonContainer > button:hover {
+    cursor: pointer;
+  }
+
+  .signupButton:hover {
+    background: #7F67BE;
+  }
+  
+  .loginButton:hover {
+    background: #f6edff73;
+    filter: brightness(95%);
+    backdrop-filter: blur(4px);
+  }
+}
