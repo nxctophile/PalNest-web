@@ -16,7 +16,9 @@ export default function Navbar() {
             <nav className='navComponent'>
                 <div className={josefin_sans.className}>
                     <Image className='navIcon' src={bird} alt='' />
-                    PalNest
+                    <Link className="link" href="/">
+                        PalNest
+                    </Link>
                 </div>
                 <div className='navItems'>
                     <Link className={`navItem ${josefin_sans.className}`} href="#">
