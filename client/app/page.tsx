@@ -1,27 +1,44 @@
 import styles from "./page.module.css";
+import Image from "next/image";
+import nest from '@/public/nest.gif';
 
-import { Lora } from "next/font/google";
+import { Lora, Josefin_Sans } from "next/font/google";
+import Link from "next/link";
 
 const lora = Lora({
   weight: '500',
   subsets: ['latin']
 });
 
+const josefin_sans = Josefin_Sans({
+    weight: '600',
+    subsets: ['latin']
+});
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.heroContainer}>
-        <div className={styles.heroText}>
-          <div className={lora.className}>
-            Where pals meet.
+        <div className={styles.heroElement}>
+          <div className={styles.heroText}>
+            <div className={lora.className}>
+              Where pals meet.
+            </div>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptatum nobis ipsa voluptates adipisci. Voluptatem explicabo ipsa ullam vel iste perspiciatis. Cum odio labore nam ullam et pariatur, illo explicabo distinctio atque voluptates accusamus maiores, quod voluptatem porro sint fugit rerum voluptate numquam, nostrum consectetur tempore veniam nobis ducimus! Minus porro at aspernatur nulla provident optio nesciunt unde sit laboriosam exercitationem quis doloribus, recusandae libero qui vitae molestiae eius ullam facere sequi totam voluptate quasi quas dolor! Quas iusto minima ad quod? Vel beatae amet excepturi, voluptates similique sapiente accusantium facilis nostrum quasi tempore? Itaque repellendus ut quaerat modi iste.
+            </span>
           </div>
-        </div>
-        <span>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, culpa dignissimos. Rem, magnam vel molestiae officiis quisquam dignissimos unde voluptates eveniet inventore, ad dicta doloribus tempora quod quibusdam repudiandae, suscipit blanditiis. Aliquam perferendis architecto adipisci molestias, quibusdam eum fugit sint quisquam quis ratione quam ipsum? A fugiat inventore cumque ratione itaque ipsum illo dolores, repellat cum quae nostrum iusto voluptatem explicabo rem. Unde quibusdam atque molestiae quod, animi quis. Reiciendis vitae culpa atque nobis sit eum repellendus odit accusamus delectus ut saepe quae, iste fugiat, possimus modi distinctio adipisci placeat, porro doloribus error eius libero quas laboriosam doloremque! Dignissimos, voluptate!
-        </span>
         <div className={styles.buttonContainer}>
-          <button className={styles.signupButton}> Get Started </button>
-          <button className={styles.loginButton}> Already in? log in </button>
+          <Link className={styles.button} href="/signup">
+            <button className={`${styles.signupButton} ${josefin_sans.className}`}> Get Started </button>          
+          </Link>
+          <Link className={styles.button} href='/login'>
+            <button className={`${styles.loginButton} ${josefin_sans.className}`}> Already in? log in </button>
+          </Link>
+        </div>
+        </div>
+        <div className={styles.nestContainer}>
+          <Image className={styles.nest} src={nest} alt='' />
         </div>
       </div>
     </main>

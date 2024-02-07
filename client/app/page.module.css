@@ -1,17 +1,19 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 6rem;
-  height: 100%;
+  align-items: center;
+  padding-top: 6rem;
+  height: 78%;
+  width: 100%;
 }
 
 .heroContainer {
   height: 100%;
   width: 80%;
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .heroText > div {
@@ -20,17 +22,17 @@
 }
 
 .heroContainer > span {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .buttonContainer {
   margin-top: 2rem;
 }
 
-.buttonContainer > button {
-  padding: 1em 2em;
+.button > button {
+  padding: 1em 1.4em;
   margin-right: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 20rem;
   transition: .2s;
 }
@@ -47,16 +49,23 @@
   color: #6750A4;
 }
 
-@media(hover:hover) {
-  .buttonContainer > button:hover {
-    cursor: pointer;
-  }
+.nestContainer {
+  margin-left: 8rem;
+}
 
+.nest {
+  border-radius: 10rem;
+  box-shadow: 0 0 20px #DAA765;
+}
+
+@media(hover:hover) {
   .signupButton:hover {
+    cursor: pointer;
     background: #7F67BE;
   }
   
   .loginButton:hover {
+    cursor: pointer;
     background: #f6edff73;
     filter: brightness(95%);
     backdrop-filter: blur(4px);
