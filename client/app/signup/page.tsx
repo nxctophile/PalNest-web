@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import google from '@/public/google.png';
 import facebook from '@/public/facebook.png';
@@ -34,7 +35,7 @@ export default function Signup() {
                     <div className={styles.forgotContainer}>
                         <div>
                             Already in?
-                            <a href="#" target='_blank'>Sign in here</a>
+                            <Link href="/login">Sign in here</Link>
                         </div>
                     </div>
                     <div className={styles.socialMethods}>
