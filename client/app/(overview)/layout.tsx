@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
-import "./ui/globals.css";
-import Navbar from "./ui/nav-bar";
+import "../ui/globals.css";
+import Navbar from "../ui/nav-bar";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] });
 
