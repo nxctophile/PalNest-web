@@ -21,7 +21,7 @@ const josefin_sans = Josefin_Sans({
 
 export default function NavDrawer() {
     return(
-        <main className='navContainer'>
+        <div className='navContainer'>
             <nav className='navComponent'>
                 <div className={josefin_sans.className}>
                     <Image className='navIcon' src={bird} alt='' />
@@ -30,10 +30,10 @@ export default function NavDrawer() {
                     </Link>
                 </div>
                 <div className='navItems'>
-                    <Link className={`active navItem ${josefin_sans.className}`} href="#">
+                    <Link className={`active navItem ${josefin_sans.className}`} href="/chats">
                         Chats
                     </Link>
-                    <Link className={`navItem ${josefin_sans.className}`} href="#">
+                    <Link className={`navItem ${josefin_sans.className}`} href="/feed">
                         Feed
                     </Link>
                 </div>
@@ -43,6 +43,6 @@ export default function NavDrawer() {
 	                </Link>
                 </div>
             </nav>
-        </main>
+        </div>
     );
 }
