@@ -8,8 +8,6 @@ import addstory from "@/public/add-story.png";
 import add from "@/public/plus.png";
 import send from "@/public/send.png";
 import emoji from "@/public/emoji.png";
-import despacito from "@/public/despacito.gif";
-import babyshark from "@/public/babyshark.gif";
 import cat from "@/public/cat.jpg";
 
 const nunito_sans = Nunito_Sans({ subsets: ["latin"] });
